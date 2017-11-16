@@ -1,42 +1,59 @@
-/* ---- reset ---- */
+* {
+  box-sizing: border-box; }
 
 body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-}
+  margin: 0; }
 
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
+/* ---- reset ---- */
 .test {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-}
-
-h1 {
+  width: 100%;
+  position: absolute;
+  text-align: center; }
+  .test h1 {
     color: white;
     background: none;
-    margin: 80px auto;
-}
-
-img {
+    margin: 20px auto;
+    font-family: "Dosis", sans-serif;
+    text-shadow: 2px 2px 2px #ff0000, -2px -2px 2px #ff0000, 2px -2px 2px #ff0000, -2px 2px 2px #ff0000, 2px 2px 10px #ff0000, -2px -2px 10px #ff0000, 2px -2px 10px #ff0000, -2px 2px 10px #ff0000;
+    font-weight: 600; }
+  .test h2 {
+    font-family: "Monda", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em; }
+  .test a {
+    text-decoration: none;
+    color: white;
+    position: absolute; }
+  .test .about {
+    top: 50vh;
+    left: 20vw;
+    transform: translate(-50%, -50%); }
+  .test .contact {
+    top: 90vh;
+    left: 50vw;
+    transform: translate(-50%, -50%); }
+  .test .projects {
+    top: 50vh;
+    left: 80vw;
+    transform: translate(-50%, -50%); }
+  .test img {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
     width: 15%;
-}
-
+    transform: translate(-50%, -50%); }
 
 /* ---- particles.js container ---- */
-
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #101010;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    top: 0;
-}
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  top: 0; }
+
+canvas {
+  display: block; }
