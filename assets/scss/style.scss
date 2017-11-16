@@ -1,23 +1,10 @@
 // font-family: 'Monda', sans-serif;
 // font-family: 'Dosis', sans-serif; (Néons)
-$monda:'Monda',
-sans-serif;
-$dosis:'Dosis',
-sans-serif;
-$rose: #F400FF;
-$bleu: #0064FF;
-$rose-tr1: rgba(242, 0, 255, 0.75);
-$bleu-tr1: rgba(0, 102, 255, 0.75);
-$rose-tr2: rgba(242, 0, 255, 0.40);
-$bleu-tr2: rgba(0, 102, 255, 0.40);
+@import 'animations';
+@import 'variables';
+//
 @mixin center {
     transform: translate(-50%, -50%);
-}
-
-@mixin text-gradient {
-    background: -webkit-linear-gradient($rose, $bleu);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 * {
@@ -47,45 +34,31 @@ body {
         color: white;
         position: absolute;
     }
-    .h2 {
-        text-decoration: none;
-        color: white;
-        position: absolute;
-    }
     h2 {
         font-family: $monda;
         text-transform: uppercase;
         font-size: 1em;
     }
-    h2:hover {
-        @include text-gradient();
-        transition-duration: 0.3s;
-    }
-    .h2:hover::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        background: -webkit-linear-gradient($rose, $bleu);
-        transition-duration: 0.3s;
-    }
-    .h2:hover::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        background: -webkit-linear-gradient($rose, $bleu);
-        transition-duration: 0.3s;
+    .h2 {
+        text-decoration: none;
+        color: white;
+        position: absolute;
     }
     .about {
         top: 50vh;
         left: 20vw;
         @include center();
     }
+    .about:hover+#Vector1 use {
+        fill: blue;
+    }
     .contact {
         top: 90vh;
         left: 50vw;
         @include center();
+        padding-right: 20px;
+        padding-left: 20px;
+        z-index: 1;
     }
     .projects {
         top: 50vh;
@@ -98,6 +71,14 @@ body {
         left: 50vw;
         width: 15%;
         @include center();
+    }
+    //SVG MODIFICATIONS
+    svg {
+        width: 15%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -119,5 +100,3 @@ body {
 canvas {
     display: block;
 }
-
-;

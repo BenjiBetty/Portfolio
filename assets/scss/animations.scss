@@ -1,0 +1,148 @@
+@import 'variables';
+@mixin text-gradient-left {
+    background: -webkit-linear-gradient(left, $rose, $bleu);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-right {
+    background: -webkit-linear-gradient(right, $rose, $bleu);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-bottom {
+    background: -webkit-linear-gradient(bottom, $rose, $bleu);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin load-left {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0px;
+    background: -webkit-linear-gradient(left, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+@mixin load-left-hover {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: -webkit-linear-gradient(left, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+@mixin load-right {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0px;
+    background: -webkit-linear-gradient(right, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+@mixin load-right-hover {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: -webkit-linear-gradient(right, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+@mixin load-bottom {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 0px;
+    background: -webkit-linear-gradient(bottom, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+@mixin load-bottom-hover {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom, $rose, $bleu);
+    transition-duration: 0.4s;
+}
+
+//ANIMATIONS
+.about:hover {
+    @include text-gradient-left();
+    transition-duration: 0.4s;
+}
+
+.about::before {
+    @include load-left();
+}
+
+.about::after {
+    @include load-left();
+}
+
+.about:hover::before {
+    @include load-left-hover();
+}
+
+.about:hover::after {
+    @include load-left-hover();
+}
+
+.projects:hover {
+    @include text-gradient-right();
+    transition-duration: 0.4s;
+}
+
+.projects::before {
+    @include load-right();
+    position: absolute;
+    right: 0%;
+}
+
+.projects::after {
+    @include load-right();
+    position: absolute;
+    right: 0%;
+}
+
+.projects:hover::before {
+    @include load-right-hover();
+}
+
+.projects:hover::after {
+    @include load-right-hover();
+}
+
+.contact:hover {
+    @include text-gradient-bottom();
+    transition-duration: 0.4s;
+}
+
+.contact::before {
+    @include load-bottom();
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.contact::after {
+    @include load-bottom();
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.contact:hover::before {
+    @include load-bottom-hover();
+}
+
+.contact:hover::after {
+    @include load-bottom-hover();
+}
+
+//FIN ANIMATIONS
