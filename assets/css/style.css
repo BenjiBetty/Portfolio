@@ -135,11 +135,33 @@ body {
   text-align: center; }
   .test h1 {
     transform: translate(-50%, -50%);
-    margin-top: 10vh;
     font-family: "Dosis", sans-serif;
     font-weight: 600;
-    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4); }
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4);
+    animation: bright 0.3s infinite; }
   .test .benty {
+    animation: flottement 2.2s infinite;
+    animation-timing-function: ease-out;
+    z-index: 2; }
+
+@keyframes flottement {
+  0% {
+    transform: translateY(40%); }
+  50% {
+    transform: translateY(55%); }
+  100% {
+    transform: translateY(40%); } }
+
+@keyframes bright {
+  0% {
+    filter: brightness(50%); }
+  50% {
+    filter: brightness(80%); }
+  75% {
+    filter: brightness(75%); }
+  100% {
+    filter: brightness(100%); } }
+  .test a {
     text-decoration: none;
     color: white;
     position: absolute; }
@@ -155,8 +177,6 @@ body {
     top: 50vh;
     left: 20vw;
     transform: translate(-50%, -50%); }
-  .test .about:hover + #Vector1 use {
-    fill: blue; }
   .test .contact {
     top: 90vh;
     left: 50vw;
