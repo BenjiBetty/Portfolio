@@ -214,11 +214,11 @@ body {
     left: 50%;
     transform: translateX(-50%); }
   .test #cheveux {
-    display: none; }
+    opacity: 0; }
   .test #moustache {
-    display: none; }
+    opacity: 0; }
   .test #barbe {
-    display: none; }
+    opacity: 0; }
 
 /* ---- particles.js container ---- */
 #particles-js {
