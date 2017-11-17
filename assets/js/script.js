@@ -33,3 +33,33 @@ $(".projects").hover(function() {
     $("#Vector3").css("opacity", "1");
     $("#Vector3").css("transition", "0.4s");
 });
+
+
+//FRAMEWORK BY BENOIT "RQM-" LAURENT 
+let moving1 = document.getElementById('Vector1');
+let moving2 = document.getElementById('Vector2');
+let moving3 = document.getElementById('Vector3');
+let windowWidth, windowHeight;
+
+document.body.onmousemove = function(e) {
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
+    console.log(windowWidth, windowHeight);
+
+    translateFromMousePosition(moving1, e.clientX, e.clientY, windowWidth, windowHeight, 20);
+    translateFromMousePosition(moving2, e.clientX, e.clientY, windowWidth, windowHeight, 20);
+    translateFromMousePosition(moving3, e.clientX, e.clientY, windowWidth, windowHeight, 15);
+
+
+}
+
+function translateFromMousePosition(domObject, mousePositionX, mousePositionY, windowWidth, windowHeight, ratio) {
+    let finalX, finalY;
+    let halfScreenX = windowWidth / 2;
+    let halfScreenY = windowHeight / 2;
+
+    finalX = (mousePositionX - halfScreenX) / ratio;
+    finalY = (mousePositionY - halfScreenY) / ratio;
+
+    domObject.style['transform'] = "translate(" + finalX + "px, " + finalY + "px)";
+}

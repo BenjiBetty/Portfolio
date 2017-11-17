@@ -219,6 +219,8 @@ body {
     opacity: 0; }
   .test #barbe {
     opacity: 0; }
+  .test svg {
+    overflow: visible; }
 
 /* ---- particles.js container ---- */
 #particles-js {
