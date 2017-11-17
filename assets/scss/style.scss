@@ -29,36 +29,6 @@ body {
         text-shadow: 1px 1px 1px $bleu, -1px -1px 1px $rose, 1px -1px 1px $bleu, -1px 1px 1px $rose, 1px 1px 3px $bleu, -1px -1px 3px $rose, 1px -1px 3px $bleu, -1px 1px 3px $rose, 1px 1px 10px $bleu, -1px -1px 10px $rose, 1px -1px 10px $bleu, -1px 1px 10px $rose, 1px 1px 30px $bleu-tr1, -1px -1px 30px $rose-tr1, 1px -1px 30px $bleu-tr1, -1px 1px 30px $rose-tr1, 1px 1px 60px $bleu-tr2, -1px -1px 60px $rose-tr2, 1px -1px 60px $bleu-tr2, -1px 1px 60px $rose-tr2;
         animation: bright 0.3s infinite;
     }
-    .benty {
-        animation: flottement 2.2s infinite;
-        animation-timing-function: ease-out;
-        z-index: 2;
-    }
-    @keyframes flottement {
-        0% {
-            transform: translateY(40%);
-        }
-        50% {
-            transform: translateY(55%);
-        }
-        100% {
-            transform: translateY(40%);
-        }
-    }
-    @keyframes bright {
-        0% {
-            filter: brightness(50%);
-        }
-        50% {
-            filter: brightness(80%);
-        }
-        75% {
-            filter: brightness(75%);
-        }
-        100% {
-            filter: brightness(100%);
-        }
-    }
     a {
         text-decoration: none;
         color: white;
@@ -106,6 +76,15 @@ body {
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    #cheveux {
+        display: none;
+    }
+    #moustache {
+        display: none;
+    }
+    #barbe {
+        display: none;
     }
 }
 
