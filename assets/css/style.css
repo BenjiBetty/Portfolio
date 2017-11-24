@@ -172,6 +172,7 @@ body {
     transform: translate(-50%, -50%);
     font-family: "Dosis", sans-serif;
     font-weight: 600;
+    font-size: 2em;
     text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4);
     animation: bright 0.3s infinite; }
   .test a {
@@ -221,6 +222,51 @@ body {
     opacity: 0; }
   .test svg {
     overflow: visible; }
+
+.about-me {
+  width: 100%;
+  position: absolute; }
+  .about-me h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4); }
+  .about-me p {
+    color: white;
+    font-family: "Monda", sans-serif;
+    font-size: 0.8em; }
+  .about-me .neon-benty {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4);
+    width: 30px;
+    margin-left: 50px;
+    font-size: 1em; }
+  .about-me .benty {
+    text-align: center;
+    text-transform: uppercase; }
+  .about-me a {
+    text-decoration: none; }
+  .about-me .block-description {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%); }
+    .about-me .block-description p {
+      width: 50%; }
+    .about-me .block-description .photo {
+      width: 50%; }
+    .about-me .block-description img {
+      width: 100%;
+      -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
 /* ---- particles.js container ---- */
 #particles-js {

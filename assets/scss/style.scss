@@ -7,6 +7,13 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin neonTitre {
+    font-family: $dosis;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px $bleu, -1px -1px 1px $rose, 1px -1px 1px $bleu, -1px 1px 1px $rose, 1px 1px 3px $bleu, -1px -1px 3px $rose, 1px -1px 3px $bleu, -1px 1px 3px $rose, 1px 1px 10px $bleu, -1px -1px 10px $rose, 1px -1px 10px $bleu, -1px 1px 10px $rose, 1px 1px 30px $bleu-tr1, -1px -1px 30px $rose-tr1, 1px -1px 30px $bleu-tr1, -1px 1px 30px $rose-tr1, 1px 1px 60px $bleu-tr2, -1px -1px 60px $rose-tr2, 1px -1px 60px $bleu-tr2, -1px 1px 60px $rose-tr2;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -24,9 +31,7 @@ body {
     text-align: center;
     h1 {
         @include center();
-        font-family: $dosis;
-        font-weight: 600;
-        text-shadow: 1px 1px 1px $bleu, -1px -1px 1px $rose, 1px -1px 1px $bleu, -1px 1px 1px $rose, 1px 1px 3px $bleu, -1px -1px 3px $rose, 1px -1px 3px $bleu, -1px 1px 3px $rose, 1px 1px 10px $bleu, -1px -1px 10px $rose, 1px -1px 10px $bleu, -1px 1px 10px $rose, 1px 1px 30px $bleu-tr1, -1px -1px 30px $rose-tr1, 1px -1px 30px $bleu-tr1, -1px 1px 30px $rose-tr1, 1px 1px 60px $bleu-tr2, -1px -1px 60px $rose-tr2, 1px -1px 60px $bleu-tr2, -1px 1px 60px $rose-tr2;
+        @include neonTitre();
         animation: bright 0.3s infinite;
     }
     a {
@@ -88,6 +93,56 @@ body {
     }
     svg {
         overflow: visible;
+    }
+}
+
+//Page about me
+.about-me {
+    width: 100%;
+    position: absolute;
+    h2 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        @include neonTitre();
+    }
+    p {
+        color: white;
+        font-family: $monda;
+        font-size: 0.8em;
+    }
+    .neon-benty {
+        @include neonTitre();
+        width: 30px;
+        margin-left: 50px;
+        font-size: 1em;
+    }
+    .benty {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    a {
+        text-decoration: none;
+    }
+    .block-description {
+        width: 50%;
+        display: flex;
+        margin: auto;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        @include center();
+        p {
+            width: 50%;
+        }
+        .photo {
+            width: 50%;
+        }
+        img {
+            width: 100%;
+            -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
     }
 }
 
