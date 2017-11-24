@@ -7,6 +7,35 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin titres {
+    width: 100%;
+    position: absolute;
+    h2 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        @include neonTitre();
+    }
+    p {
+        color: white;
+        font-family: $monda;
+        font-size: 0.8em;
+    }
+    .neon-benty {
+        @include neonTitre();
+        width: 30px;
+        margin-left: 50px;
+        font-size: 1em;
+    }
+    .benty {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
 @mixin neonTitre {
     font-family: $dosis;
     font-weight: 600;
@@ -49,12 +78,12 @@ body {
         color: white;
         position: absolute;
     }
-    .about {
+    .about-index {
         top: 50vh;
         left: 20vw;
         @include center();
     }
-    .contact {
+    .contact-index {
         top: 90vh;
         left: 50vw;
         @include center();
@@ -62,7 +91,7 @@ body {
         padding-left: 20px;
         z-index: 1;
     }
-    .projects {
+    .projects-index {
         top: 50vh;
         left: 80vw;
         @include center();
@@ -98,32 +127,7 @@ body {
 
 //Page about me
 .about-me {
-    width: 100%;
-    position: absolute;
-    h2 {
-        text-align: center;
-        color: white;
-        text-transform: uppercase;
-        @include neonTitre();
-    }
-    p {
-        color: white;
-        font-family: $monda;
-        font-size: 0.8em;
-    }
-    .neon-benty {
-        @include neonTitre();
-        width: 30px;
-        margin-left: 50px;
-        font-size: 1em;
-    }
-    .benty {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    a {
-        text-decoration: none;
-    }
+    @include titres();
     .block-description {
         width: 50%;
         display: flex;
@@ -144,6 +148,28 @@ body {
             clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         }
     }
+}
+
+//Page contact
+.contact {
+    @include titres();
+    .formulaire {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        @include center();
+    }
+    label {
+        color: white;
+    }
+    .input {
+        border: 1px solid white;
+    }
+}
+
+//Page project
+.projects {
+    @include titres();
 }
 
 

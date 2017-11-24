@@ -34,7 +34,7 @@ function translateFromMousePosition(domObject, mousePositionX, mousePositionY, w
 }
 
 
-$(".about").hover(function() {
+$(".about-index").hover(function() {
     $("#cheveux").css("opacity", "1");
     $("#cheveux").css("transition", "0.4s");
     $("#Vector1").css("opacity", "0");
@@ -46,7 +46,7 @@ $(".about").hover(function() {
     $("#Vector1").css("transition", "0.4s");
 });
 
-$(".contact").hover(function() {
+$(".contact-index").hover(function() {
     $("#barbe").css("opacity", "1");
     $("#barbe").css("transition", "0.4s");
     $("#Vector2").css("opacity", "0");
@@ -58,7 +58,7 @@ $(".contact").hover(function() {
     $("#Vector2").css("transition", "0.4s");
 });
 
-$(".projects").hover(function() {
+$(".projects-index").hover(function() {
     $("#moustache").css("opacity", "1");
     $("#moustache").css("transition", "0.4s");
     $("#Vector3").css("opacity", "0");

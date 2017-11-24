@@ -111,76 +111,76 @@
     }
 }
 
-.about:hover {
+.about-index:hover {
     @include text-gradient-left();
     transition-duration: 0.4s;
 }
 
-.about::before {
+.about-index::before {
     @include load-left();
 }
 
-.about::after {
+.about-index::after {
     @include load-left();
 }
 
-.about:hover::before {
+.about-index:hover::before {
     @include load-left-hover();
 }
 
-.about:hover::after {
+.about-index:hover::after {
     @include load-left-hover();
 }
 
-.projects:hover {
+.projects-index:hover {
     @include text-gradient-right();
     transition-duration: 0.4s;
 }
 
-.projects::before {
+.projects-index::before {
     @include load-right();
     position: absolute;
     right: 0%;
 }
 
-.projects::after {
+.projects-index::after {
     @include load-right();
     position: absolute;
     right: 0%;
 }
 
-.projects:hover::before {
+.projects-index:hover::before {
     @include load-right-hover();
 }
 
-.projects:hover::after {
+.projects-index:hover::after {
     @include load-right-hover();
 }
 
-.contact:hover {
+.contact-index:hover {
     @include text-gradient-bottom();
     transition-duration: 0.4s;
 }
 
-.contact::before {
+.contact-index::before {
     @include load-bottom();
     position: absolute;
     bottom: 0%;
     left: 0%;
 }
 
-.contact::after {
+.contact-index::after {
     @include load-bottom();
     position: absolute;
     bottom: 0%;
     right: 0%;
 }
 
-.contact:hover::before {
+.contact-index:hover::before {
     @include load-bottom-hover();
 }
 
-.contact:hover::after {
+.contact-index:hover::after {
     @include load-bottom-hover();
 }
 

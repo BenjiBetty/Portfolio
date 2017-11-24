@@ -21,13 +21,13 @@
   100% {
     filter: brightness(100%); } }
 
-.about:hover {
+.about-index:hover {
   background: -webkit-linear-gradient(left, #F400FF, #0064FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 0.4s; }
 
-.about::before {
+.about-index::before {
   content: "";
   display: block;
   width: 0%;
@@ -36,7 +36,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.about::after {
+.about-index::after {
   content: "";
   display: block;
   width: 0%;
@@ -45,7 +45,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.about:hover::before {
+.about-index:hover::before {
   content: "";
   display: block;
   width: 250%;
@@ -54,7 +54,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.about:hover::after {
+.about-index:hover::after {
   content: "";
   display: block;
   width: 250%;
@@ -63,13 +63,13 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.projects:hover {
+.projects-index:hover {
   background: -webkit-linear-gradient(right, #F400FF, #0064FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 0.4s; }
 
-.projects::before {
+.projects-index::before {
   content: "";
   display: block;
   width: 0%;
@@ -80,7 +80,7 @@
   position: absolute;
   right: 0%; }
 
-.projects::after {
+.projects-index::after {
   content: "";
   display: block;
   width: 0%;
@@ -91,7 +91,7 @@
   position: absolute;
   right: 0%; }
 
-.projects:hover::before {
+.projects-index:hover::before {
   content: "";
   display: block;
   width: 250%;
@@ -100,7 +100,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.projects:hover::after {
+.projects-index:hover::after {
   content: "";
   display: block;
   width: 250%;
@@ -109,13 +109,13 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.contact:hover {
+.contact-index:hover {
   background: -webkit-linear-gradient(bottom, #F400FF, #0064FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 0.4s; }
 
-.contact::before {
+.contact-index::before {
   content: "";
   display: block;
   width: 3px;
@@ -127,7 +127,7 @@
   bottom: 0%;
   left: 0%; }
 
-.contact::after {
+.contact-index::after {
   content: "";
   display: block;
   width: 3px;
@@ -139,7 +139,7 @@
   bottom: 0%;
   right: 0%; }
 
-.contact:hover::before {
+.contact-index:hover::before {
   content: "";
   display: block;
   width: 3px;
@@ -148,7 +148,7 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-out; }
 
-.contact:hover::after {
+.contact-index:hover::after {
   content: "";
   display: block;
   width: 3px;
@@ -187,18 +187,18 @@ body {
     text-decoration: none;
     color: white;
     position: absolute; }
-  .test .about {
+  .test .about-index {
     top: 50vh;
     left: 20vw;
     transform: translate(-50%, -50%); }
-  .test .contact {
+  .test .contact-index {
     top: 90vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     padding-right: 20px;
     padding-left: 20px;
     z-index: 1; }
-  .test .projects {
+  .test .projects-index {
     top: 50vh;
     left: 80vw;
     transform: translate(-50%, -50%); }
@@ -267,6 +267,73 @@ body {
       width: 100%;
       -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
       clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+
+.contact {
+  width: 100%;
+  position: absolute; }
+  .contact h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4); }
+  .contact p {
+    color: white;
+    font-family: "Monda", sans-serif;
+    font-size: 0.8em; }
+  .contact .neon-benty {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4);
+    width: 30px;
+    margin-left: 50px;
+    font-size: 1em; }
+  .contact .benty {
+    text-align: center;
+    text-transform: uppercase; }
+  .contact a {
+    text-decoration: none; }
+  .contact .formulaire {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%); }
+  .contact label {
+    color: white; }
+  .contact .input {
+    border: 1px solid white; }
+
+.projects {
+  width: 100%;
+  position: absolute; }
+  .projects h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4); }
+  .projects p {
+    color: white;
+    font-family: "Monda", sans-serif;
+    font-size: 0.8em; }
+  .projects .neon-benty {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #0064FF, -1px -1px 1px #F400FF, 1px -1px 1px #0064FF, -1px 1px 1px #F400FF, 1px 1px 3px #0064FF, -1px -1px 3px #F400FF, 1px -1px 3px #0064FF, -1px 1px 3px #F400FF, 1px 1px 10px #0064FF, -1px -1px 10px #F400FF, 1px -1px 10px #0064FF, -1px 1px 10px #F400FF, 1px 1px 30px rgba(0, 102, 255, 0.75), -1px -1px 30px rgba(242, 0, 255, 0.75), 1px -1px 30px rgba(0, 102, 255, 0.75), -1px 1px 30px rgba(242, 0, 255, 0.75), 1px 1px 60px rgba(0, 102, 255, 0.4), -1px -1px 60px rgba(242, 0, 255, 0.4), 1px -1px 60px rgba(0, 102, 255, 0.4), -1px 1px 60px rgba(242, 0, 255, 0.4);
+    width: 30px;
+    margin-left: 50px;
+    font-size: 1em; }
+  .projects .benty {
+    text-align: center;
+    text-transform: uppercase; }
+  .projects a {
+    text-decoration: none; }
 
 /* ---- particles.js container ---- */
 #particles-js {
