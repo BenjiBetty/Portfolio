@@ -296,15 +296,56 @@ body {
     text-transform: uppercase; }
   .contact a {
     text-decoration: none; }
-  .contact .formulaire {
+  .contact .contact-me {
+    text-align: center;
     position: absolute;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%); }
+  .contact .formulaire {
+    font-family: 'Monda', sans-serif;
+    grid-column: 1; }
   .contact label {
-    color: white; }
+    color: white;
+    text-shadow: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    line-height: 20px; }
   .contact .input {
-    border: 1px solid white; }
+    color: white;
+    border: 1px solid #494949;
+    background-color: #151515;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    width: auto;
+    height: 100%; }
+  .contact #name {
+    height: 25px; }
+  .contact #email {
+    height: 25px; }
+  .contact #submit_button {
+    color: white;
+    background: linear-gradient(to right, #F400FF, #0064FF);
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    height: 35px;
+    margin: 15px auto; }
+  .contact .infos {
+    text-align: center;
+    font-size: 1.2em;
+    border-left: 2px solid #494949;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .projects {
   width: 100%;
