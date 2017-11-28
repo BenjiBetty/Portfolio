@@ -216,6 +216,52 @@ body {
 //Page project
 .projects {
     @include titres();
+    .container {
+        position: absolute;
+        top: 60vh;
+        left: 50vw;
+        @include center();
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 140px 140px;
+        grid-gap: 30px;
+        margin: 0 auto;
+    }
+    .img1 {
+        border: 1px solid grey;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .img2 {
+        border: 1px solid grey;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .img3 {
+        border: 1px solid grey;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .img4 {
+        border: 1px solid grey;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .img5 {
+        border: 1px solid grey;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .img6 {
+        border: 1px solid grey;
+        grid-column: 3;
+        grid-row: 2;
+    }
+    a {
+        img {
+            width: 100%;
+        }
+    }
 }
 
 
