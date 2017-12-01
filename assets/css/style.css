@@ -388,15 +388,21 @@ body {
   .projects .img1 {
     border: 1px solid grey;
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    background-image: url("../../assets/img/createpro.png");
+    background-size: cover; }
   .projects .img2 {
     border: 1px solid grey;
     grid-column: 2;
-    grid-row: 1; }
+    grid-row: 1;
+    background-image: url("../../assets/img/massively.png");
+    background-size: cover; }
   .projects .img3 {
     border: 1px solid grey;
     grid-column: 3;
-    grid-row: 1; }
+    grid-row: 1;
+    background-image: url("../../assets/img/clicker.png");
+    background-size: cover; }
   .projects .img4 {
     border: 1px solid grey;
     grid-column: 1;
